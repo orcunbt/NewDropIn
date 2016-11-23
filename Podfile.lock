@@ -1,0 +1,23 @@
+PODS:
+  - Braintree/Card (4.6.1):
+    - Braintree/Core
+  - Braintree/Core (4.6.1)
+  - Braintree/DropIn (4.6.1):
+    - Braintree/Card
+    - Braintree/Core
+    - Braintree/UIKit
+    - Braintree/UnionPay
+  - Braintree/UIKit (4.6.1)
+  - Braintree/UnionPay (4.6.1):
+    - Braintree/Card
+    - Braintree/Core
+
+DEPENDENCIES:
+  - Braintree/DropIn
+
+SPEC CHECKSUMS:
+  Braintree: 70926d146412e9148ea383b76333eed992e53eb4
+
+PODFILE CHECKSUM: d4628e36d3a3640f413e373a8a6726c158db4f87
+
+COCOAPODS: 1.0.1

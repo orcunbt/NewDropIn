@@ -1,0 +1,1 @@
+../../../Braintree/BraintreeUIKit/Vector Art/Large/BTUIKLargeDiscoverVectorArtView.h
