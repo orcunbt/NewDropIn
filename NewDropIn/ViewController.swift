@@ -63,7 +63,7 @@ class ViewController: UIViewController {
                 let selectedPaymentOptionType = result.paymentOptionType
                 
                 // This is the payment nonce
-                let selectedPaymentMethod = result.paymentMethod
+                let selectedPaymentMethod = result.paymentMethod?.nonce
                 
                 let selectedPaymentMethodIcon = result.paymentIcon
                 let selectedPaymentMethodDescription = result.paymentDescription
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         self.presentViewController(dropIn!, animated: true, completion: nil)
     }
     
-    func postNonceToServer(paymentMethodNonce: BTPaymentMethodNonce) {
+    func postNonceToServer(paymentMethodNonce: String) {
         price = 1300.00
         let paymentURL = NSURL(string: "http://orcodevbox.co.uk/BTOrcun/iosPayment.php")!
         let request = NSMutableURLRequest(URL: paymentURL)
